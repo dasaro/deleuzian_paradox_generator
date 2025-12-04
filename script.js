@@ -1,12 +1,42 @@
 // Generatore di Paradossi Deleuziani
 // Titolo + frase in stile Deleuze, con coppie semantiche più controllate.
 
+const seriesEl = document.getElementById("series-label");
 const titleEl = document.getElementById("title");
 const textEl = document.getElementById("paradox-text");
 const btnEl = document.getElementById("generate-btn");
 const cursorEl = document.getElementById("cursor");
 
 let typingInterval = null;
+
+function toRoman(num) {
+  const romanMap = [
+    { value: 50, symbol: "L" },
+    { value: 40, symbol: "XL" },
+    { value: 10, symbol: "X" },
+    { value: 9, symbol: "IX" },
+    { value: 5, symbol: "V" },
+    { value: 4, symbol: "IV" },
+    { value: 1, symbol: "I" }
+  ];
+  let result = "";
+  let n = num;
+  for (const entry of romanMap) {
+    while (n >= entry.value) {
+      result += entry.symbol;
+      n -= entry.value;
+    }
+  }
+  return result;
+}
+
+function setRandomSeriesLabel() {
+  if (!seriesEl) return;
+  // Deleuze ha serie numerate, qui scegliamo un numero simbolico fra I e XXIV
+  const n = 1 + Math.floor(Math.random() * 24);
+  const roman = toRoman(n);
+  seriesEl.textContent = `Serie di paradossi ${roman}`;
+}
 
 // Schema generale (semplificato dall'originale di Deleuze):
 // "Quando dico «X», voglio dire che Y diventa più A di quanto non fosse prima.
@@ -176,7 +206,7 @@ const paradoxes = [
     double:
       "Dico che la stessa linea è ultimo limite per chi sta dentro e primo limite per chi sta fuori.",
     final:
-      "La strada non si sposta, ma quel tratto la fa valere insieme come uscita e come ingresso."
+      "Non c'è un prima e un dopo del confine: è il punto in cui interno ed esterno si scambiano di posto senza muoversi."
   },
   {
     title: "Il paradosso della porta socchiusa",
@@ -247,6 +277,57 @@ const paradoxes = [
       "Dico che lo stesso silenzio è massima pace per chi lo cerca e massima tensione per chi lo subisce.",
     final:
       "L'aria resta ferma, ma raddoppia sia la quiete sia l'angoscia."
+  },
+  // --- Paradossi pragmatici / normativi ---
+  {
+    title: "Il paradosso del «è solo un gioco»",
+    quote: "«è solo un gioco»",
+    opening:
+      "non sto semplicemente sminuendo quello che accade.",
+    double:
+      "Dico che la stessa attività viene dichiarata meno seria di tutto il resto e, nello stesso istante, usata per allenare le stesse regole di vittoria e sconfitta.",
+    final:
+      "Il gioco è detto «solo» gioco, ma diventa il luogo in cui si impara come si vince e come si perde anche fuori dal campo."
+  },
+  {
+    title: "Il paradosso dell'«è solo un'opinione personale»",
+    quote: "«è solo un'opinione personale»",
+    opening:
+      "non sto soltanto facendo un passo indietro rispetto alla verità.",
+    double:
+      "Dico che lo stesso giudizio si presenta come più debole, perché non pretende oggettività, e più forte, perché non accetta di essere discusso al di fuori di chi lo pronuncia.",
+    final:
+      "La formula attenua il tono, ma blinda il contenuto: sembra ritirarsi e intanto si rende intoccabile."
+  },
+  {
+    title: "Il paradosso del «non prenderla sul personale»",
+    quote: "«non prenderla sul personale»",
+    opening:
+      "non sto davvero togliendo la tua persona dal centro della frase.",
+    double:
+      "Dico che lo stesso rimprovero si propone come generale, valido per chiunque, e nello stesso momento colpisce proprio te, qui e ora, come il vero bersaglio.",
+    final:
+      "La formula pretende di depersonalizzare, ma serve soprattutto a far passare qualcosa che è già arrivato troppo vicino."
+  },
+  {
+    title: "Il paradosso del «te lo dico per il tuo bene»",
+    quote: "«te lo dico per il tuo bene»",
+    opening:
+      "non sto solo chiarendo le mie intenzioni.",
+    double:
+      "Dico che la stessa frase si offre come cura per te e come garanzia per me, che posso così spingere di più senza sembrare aggressivo.",
+    final:
+      "Il bene dell'altro viene convocato come motivo, ma è anche lo schermo dietro cui si nasconde il mio desiderio di orientare le sue scelte."
+  },
+  {
+    title: "Il paradosso dell'«è solo teoria»",
+    quote: "«è solo teoria»",
+    opening:
+      "non sto separando semplicemente il pensiero dalla pratica.",
+    double:
+      "Dico che lo stesso insieme di idee viene messo da parte come irrilevante e usato in silenzio come griglia per giudicare ciò che funziona.",
+    final:
+      "La teoria è dichiarata «solo» teoria, ma resta il metro invisibile con cui si misurano i fatti."
   }
 ];
 
@@ -293,4 +374,7 @@ function generateParadox() {
 }
 
 btnEl.addEventListener("click", generateParadox);
-window.addEventListener("DOMContentLoaded", generateParadox);
+window.addEventListener("DOMContentLoaded", () => {
+  setRandomSeriesLabel();
+  generateParadox();
+});
