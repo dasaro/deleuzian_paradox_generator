@@ -49,6 +49,7 @@ const paradoxes = [
   {
     title: "Il paradosso di crescere",
     quote: "«Alice cresce»",
+    act: "il divenire",
     opening:
       "non descrivo solo il fatto che il suo corpo si allunga man mano.",
     double:
@@ -59,6 +60,7 @@ const paradoxes = [
   {
     title: "Il paradosso di invecchiare",
     quote: "«sto invecchiando»",
+    act: "il divenire",
     opening:
       "non registro semplicemente il passare degli anni.",
     double:
@@ -69,6 +71,7 @@ const paradoxes = [
   {
     title: "Il paradosso del procrastinare",
     quote: "«lo faccio domani»",
+    act: "il divenire",
     opening:
       "non sposto soltanto un'attività sul calendario.",
     double:
@@ -79,6 +82,7 @@ const paradoxes = [
   {
     title: "Il paradosso del rassicurare",
     quote: "«non ti preoccupare»",
+    act: "il divenire",
     opening:
       "non cancello di colpo il motivo d'ansia.",
     double:
@@ -89,6 +93,7 @@ const paradoxes = [
   {
     title: "Il paradosso del mettere like",
     quote: "«metto un like»",
+    act: "il divenire",
     opening:
       "non compio solo un gesto leggero con il pollice.",
     double:
@@ -99,6 +104,7 @@ const paradoxes = [
   {
     title: "Il paradosso del delegare",
     quote: "«te lo delego»",
+    act: "il divenire",
     opening:
       "non mi limito a distribuire il lavoro.",
     double:
@@ -109,6 +115,7 @@ const paradoxes = [
   {
     title: "Il paradosso del promettere",
     quote: "«te lo prometto»",
+    act: "il divenire",
     opening:
       "non aggiungo solo una formula di cortesia.",
     double:
@@ -119,6 +126,7 @@ const paradoxes = [
   {
     title: "Il paradosso del chiudere la discussione",
     quote: "«chiudiamo qui la discussione»",
+    act: "il divenire",
     opening:
       "non sto semplicemente mettendo fine a una conversazione.",
     double:
@@ -129,6 +137,7 @@ const paradoxes = [
   {
     title: "Il paradosso dell'aggiornare il profilo",
     quote: "«aggiorno il profilo»",
+    act: "il divenire",
     opening:
       "non cambio semplicemente una foto e due righe di testo.",
     double:
@@ -139,6 +148,7 @@ const paradoxes = [
   {
     title: "Il paradosso del dire «ci vediamo»",
     quote: "«ci vediamo presto»",
+    act: "il divenire",
     opening:
       "non fisso davvero una data.",
     double:
@@ -151,6 +161,7 @@ const paradoxes = [
   {
     title: "Il paradosso dello zero",
     quote: "«0 non è né positivo né negativo»",
+    act: "il tracciare il limite",
     opening:
       "non racconto la storia di un numero che attraversa lo zero.",
     double:
@@ -161,6 +172,7 @@ const paradoxes = [
   {
     title: "Il paradosso della somma banale",
     quote: "«2+2=4»",
+    act: "il fare logica",
     opening:
       "non descrivo un calcolo che evolve.",
     double:
@@ -171,6 +183,7 @@ const paradoxes = [
   {
     title: "Il paradosso dell'identità",
     quote: "«A è A»",
+    act: "il fare logica",
     opening:
       "non aggiungo nulla al simbolo che nomino.",
     double:
@@ -181,6 +194,7 @@ const paradoxes = [
   {
     title: "Il paradosso della tautologia",
     quote: "«se piove, allora piove»",
+    act: "il fare logica",
     opening:
       "non informo nessuno sul meteo.",
     double:
@@ -191,6 +205,7 @@ const paradoxes = [
   {
     title: "Il paradosso della contraddizione formale",
     quote: "«è impossibile che P e non‑P siano vere insieme»",
+    act: "il fare logica",
     opening:
       "non descrivo due fatti incompatibili.",
     double:
@@ -201,6 +216,7 @@ const paradoxes = [
   {
     title: "Il paradosso del confine della città",
     quote: "«qui finisce la città»",
+    act: "il tracciare il limite",
     opening:
       "non indico un muro che avanza o arretra.",
     double:
@@ -211,6 +227,7 @@ const paradoxes = [
   {
     title: "Il paradosso della porta socchiusa",
     quote: "«la porta è socchiusa»",
+    act: "il tracciare il limite",
     opening:
       "non racconto un movimento di apertura o chiusura.",
     double:
@@ -221,6 +238,7 @@ const paradoxes = [
   {
     title: "Il paradosso di zero gradi",
     quote: "«a zero gradi l'acqua congela»",
+    act: "il tracciare il limite",
     opening:
       "non seguo il destino di una goccia che cambia stato.",
     double:
@@ -231,6 +249,7 @@ const paradoxes = [
   {
     title: "Il paradosso della soglia di sufficienza",
     quote: "«18 è la sufficienza»",
+    act: "il tracciare il limite",
     opening:
       "non narro la storia di un voto che sale.",
     double:
@@ -241,6 +260,7 @@ const paradoxes = [
   {
     title: "Il paradosso dell'equatore",
     quote: "«l'equatore divide i due emisferi»",
+    act: "il tracciare il limite",
     opening:
       "non immagino una linea che migra verso nord o verso sud.",
     double:
@@ -251,6 +271,7 @@ const paradoxes = [
   {
     title: "Il paradosso del centro del cerchio",
     quote: "«questo è il centro del cerchio»",
+    act: "il tracciare il limite",
     opening:
       "non penso a un punto che si sposta verso il bordo.",
     double:
@@ -261,6 +282,7 @@ const paradoxes = [
   {
     title: "Il paradosso della pagina bianca",
     quote: "«la pagina è ancora bianca»",
+    act: "il dare figura al fenomeno",
     opening:
       "non constato solo che non c'è inchiostro.",
     double:
@@ -271,6 +293,7 @@ const paradoxes = [
   {
     title: "Il paradosso del silenzio",
     quote: "«qui c'è silenzio»",
+    act: "il dare figura al fenomeno",
     opening:
       "non registro soltanto l'assenza di suono.",
     double:
@@ -282,6 +305,7 @@ const paradoxes = [
   {
     title: "Il paradosso del «è solo un gioco»",
     quote: "«è solo un gioco»",
+    act: "il normare",
     opening:
       "non sto semplicemente sminuendo quello che accade.",
     double:
@@ -292,6 +316,7 @@ const paradoxes = [
   {
     title: "Il paradosso dell'«è solo un'opinione personale»",
     quote: "«è solo un'opinione personale»",
+    act: "il normare",
     opening:
       "non sto soltanto facendo un passo indietro rispetto alla verità.",
     double:
@@ -302,6 +327,7 @@ const paradoxes = [
   {
     title: "Il paradosso del «non prenderla sul personale»",
     quote: "«non prenderla sul personale»",
+    act: "il normare",
     opening:
       "non sto davvero togliendo la tua persona dal centro della frase.",
     double:
@@ -312,6 +338,7 @@ const paradoxes = [
   {
     title: "Il paradosso del «te lo dico per il tuo bene»",
     quote: "«te lo dico per il tuo bene»",
+    act: "il normare",
     opening:
       "non sto solo chiarendo le mie intenzioni.",
     double:
@@ -322,6 +349,7 @@ const paradoxes = [
   {
     title: "Il paradosso dell'«è solo teoria»",
     quote: "«è solo teoria»",
+    act: "il normare",
     opening:
       "non sto separando semplicemente il pensiero dalla pratica.",
     double:
@@ -336,9 +364,12 @@ function randomItem(arr) {
 }
 
 function buildText(p) {
-  return `Quando dico ${p.quote}, ${p.opening} ` +
-         `${p.double} ` +
-         `${p.final}`;
+  const base = `Quando dico ${p.quote}, ${p.opening} ` +
+               `${p.double} ` +
+               `${p.final}`;
+  const coda =
+    ` In questo doppio tirare, dove un solo punto appartiene a due serie che divergono e tuttavia si richiamano, è proprio ${p.act} che si mostra paradossale, come un evento che non si lascia rinchiudere in una sola direzione del senso e tiene insieme, in una sola volta, le sue due spinte opposte.`;
+  return base + coda;
 }
 
 // Effetto typewriter
