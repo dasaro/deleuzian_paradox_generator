@@ -98,7 +98,7 @@ const paradoxes = [
   },
   {
     title: "Il paradosso del delegare",
-    quote: "«delegalo tu»",
+    quote: "«te lo delego»",
     opening:
       "non mi limito a distribuire il lavoro.",
     double:
