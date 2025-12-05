@@ -51,11 +51,11 @@ const paradoxes = [
     quote: "«Alice cresce»",
     act: "il puro divenire",
     opening:
-      "non descrivo solo il fatto che il suo corpo si allunga man mano.",
+      "voglio dire che diventa più grande di quanto non fosse prima.",
     double:
-      "Dico che, rispetto a ieri, Alice è già più grande, e rispetto a domani è ancora troppo piccola.",
+      "Ma voglio anche dire che diventa più piccola di quanto non sia ora: senza dubbio non è nello stesso tempo che Alice sia più grande e più piccola, ma è nello stesso divenire che lo diventa, più grande rispetto a prima e più piccola rispetto a dopo.",
     final:
-      "Senza dubbio, non è nello stesso momento che Alice sia più grande e più piccola. Ma è nello stesso enunciato «Alice cresce» che lo diventa: più grande di quanto fosse, più piccola di quanto sarà."
+      "È più grande ora ed era più piccola prima, ma è nello stesso colpo, in una sola volta, che si diventa più grandi di quanto non si fosse e ci si fa più piccoli di quanto non si diventi: tale è la simultaneità del divenire che schiva il presente, non sopporta la separazione tra prima e dopo e incrina il buon senso del senso unico."
   },
   {
     title: "Il paradosso di invecchiare",
