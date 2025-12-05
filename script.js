@@ -358,7 +358,169 @@ const paradoxes = [
     final:
       "Non è nello stesso gesto che la teoria sia accantonata e decisiva. Ma è nello stesso «è solo teoria» che diventa insieme ciò che si finge di non seguire e ciò che in realtà orienta ciò che si fa."
   }
+
 ];
+
+// --- Variante combinatoria (sperimentale) ---
+// Qui definiamo domini concettuali con:
+// - atto (act) deleuziano astratto
+// - possibili citazioni (quote)
+// - un soggetto base (subject)
+// - varianti di opening / double / final, con segnaposto {subject}, {A}, {B}, {scope}, {carrier}.
+
+const combinatorialDomains = [
+  {
+    id: "tempo",
+    label: "del tempo",
+    act: "l'economia del tempo",
+    quotes: ["«lo faccio domani»", "«ci vediamo presto»"],
+    subject: "compito",
+    scope: "oggi",
+    carrier: "rinvio",
+    pairs: [
+      {
+        A: "più lontano dal mio oggi",
+        B: "più vicino come pensiero fisso"
+      },
+      {
+        A: "meno presente nella mia agenda",
+        B: "più presente nella mia testa"
+      }
+    ],
+    openings: [
+      "non sposto soltanto un'attività sul calendario.",
+      "non sto semplicemente distribuendo il tempo su un'altra giornata."
+    ],
+    doubles: [
+      "Dico che lo stesso {subject} si allontana dall'oggi e si installa, nello stesso gesto, nel pensiero che volevo liberare.",
+      "Dico che lo stesso {subject} esce dalla lista delle cose da fare e rientra subito come pensiero che non riesco a scacciare."
+    ],
+    finals: [
+      "Non è nello stesso {scope} che {subject} sia assente e presente. Ma è nello stesso {carrier} che diventa insieme lontano nel tempo e vicino come ossessione.",
+      "Non è nello stesso giorno che {subject} sia rimandato e compiuto. Ma è nello stesso gesto che lo posticipa che diventa insieme fuori dall'agenda e dentro la mente."
+    ]
+  },
+  {
+    id: "limite",
+    label: "del limite",
+    act: "la logica del limite",
+    quotes: ["«qui finisce la città»", "«18 è la sufficienza»"],
+    subject: "linea",
+    scope: "spazio",
+    carrier: "confine",
+    pairs: [
+      {
+        A: "ultimo bordo per chi sta dentro",
+        B: "primo bordo per chi sta fuori"
+      },
+      {
+        A: "ultimo gradino dell'insufficienza",
+        B: "primo gradino del riuscito"
+      }
+    ],
+    openings: [
+      "non indico semplicemente un prima e un dopo.",
+      "non descrivo solo il punto in cui qualcosa termina."
+    ],
+    doubles: [
+      "Dico che la stessa {subject} è, per chi arretra, estremo limite di ciò che perde, e per chi avanza, primo passo di ciò che conquista.",
+      "Dico che la stessa {subject} segna, per alcuni, ciò che non hanno raggiunto e, per altri, ciò che li separa da chi resta indietro."
+    ],
+    finals: [
+      "Non è nello stesso gesto che si esca e si entri. Ma è nello stesso {carrier} che dentro e fuori diventano insieme ciò che si lascia e ciò in cui si arriva.",
+      "Non è nello stesso atto che un voto respinga e ammetta. Ma è nello stesso limite che diventa insieme cifra di esclusione e di appartenenza."
+    ]
+  },
+  {
+    id: "norma",
+    label: "della norma",
+    act: "il lavoro della norma",
+    quotes: ["«è solo un gioco»", "«è solo teoria»"],
+    subject: "stesso gesto",
+    scope: "discorso",
+    carrier: "formula che lo accompagna",
+    pairs: [
+      {
+        A: "meno serio di tutto il resto",
+        B: "più formativo di quanto si ammetta"
+      },
+      {
+        A: "messo da parte come irrilevante",
+        B: "usato in silenzio come misura di ciò che conta"
+      }
+    ],
+    openings: [
+      "non sto semplicemente togliendo peso a ciò che accade.",
+      "non sto soltanto mettendo tra parentesi ciò che viene detto o fatto."
+    ],
+    doubles: [
+      "Dico che lo stesso {subject} è dichiarato meno importante degli altri e, nello stesso momento, diventa il modello con cui giudichiamo il resto.",
+      "Dico che lo stesso {subject} viene spinto ai margini a parole e riportato al centro nel modo in cui valutiamo, senza dirlo."
+    ],
+    finals: [
+      "Non è nello stesso {scope} che qualcosa sia minimo e decisivo. Ma è nella stessa {carrier} che diventa insieme ciò che si finge di non contare e ciò che in realtà pesa di più.",
+      "Non è nello stesso commento che un gesto sia archiviato e normato. Ma è nella stessa etichetta di «solo» qualcosa che diventa insieme innocuo e vincolante."
+    ]
+  }
+];
+
+// Scegliamo elementi a caso all'interno di un dominio e costruiamo un paradosso combinatorio.
+function randomDomainItem(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+/**
+ * Costruisce un paradosso combinatorio in stile analogo a quelli fissi.
+ * Restituisce un oggetto con { title, quote, act, opening, double, final }.
+ */
+function buildCombinatorialParadox() {
+  const domain = randomDomainItem(combinatorialDomains);
+  const quote = randomDomainItem(domain.quotes);
+  const pair = randomDomainItem(domain.pairs);
+  const opening = randomDomainItem(domain.openings);
+  let double = randomDomainItem(domain.doubles);
+  let final = randomDomainItem(domain.finals);
+
+  // Sostituzione segnaposto basilare
+  const subject = domain.subject;
+  const replacements = {
+    "{subject}": subject,
+    "{A}": pair.A,
+    "{B}": pair.B,
+    "{scope}": domain.scope,
+    "{carrier}": domain.carrier
+  };
+
+  for (const [placeholder, value] of Object.entries(replacements)) {
+    double = double.split(placeholder).join(value);
+    final = final.split(placeholder).join(value);
+  }
+
+  return {
+    title: `Un paradosso ${domain.label}`,
+    quote,
+    act: domain.act,
+    opening,
+    double,
+    final
+  };
+}
+
+// Helper che produce direttamente il testo completo combinatorio (come buildText)
+function buildCombinatorialText() {
+  const p = buildCombinatorialParadox();
+  const base = `Quando dico ${p.quote}, ${p.opening} ${p.double} ${p.final}`;
+  const coda =
+    ` In questo doppio tirare, dove un solo punto appartiene a due serie che divergono e tuttavia si richiamano, è proprio ${p.act} che si mostra paradossale, come un evento che non si lascia rinchiudere in una sola direzione del senso e tiene insieme, in una sola volta, le sue due spinte opposte.`;
+  return { p, text: base + coda };
+}
+
+// NOTA: per tenere separata la variante combinatoria da quella fissa,
+// lasciamo generateParadox() invariata. Per provare la variante
+// combinatoria da console:
+//   const r = buildCombinatorialText();
+//   titleEl.textContent = r.p.title;
+//   typeText(r.text);
 
 function randomItem(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
