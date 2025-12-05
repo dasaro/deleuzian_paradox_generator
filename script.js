@@ -49,313 +49,314 @@ const paradoxes = [
   {
     title: "Il paradosso di crescere",
     quote: "«Alice cresce»",
-    act: "il divenire",
+    act: "il puro divenire",
     opening:
       "non descrivo solo il fatto che il suo corpo si allunga man mano.",
     double:
-      "Dico che la stessa frase fa di Alice, rispetto a ieri, qualcuno di più grande e, rispetto a domani, qualcuno di ancora troppo piccolo.",
+      "Dico che, rispetto a ieri, Alice è già più grande, e rispetto a domani è ancora troppo piccola.",
     final:
-      "Il corpo cambia, ma è un solo enunciato che tira Alice verso il passato che ha già lasciato e verso il futuro che non ha ancora raggiunto."
+      "Senza dubbio, non è nello stesso momento che Alice sia più grande e più piccola. Ma è nello stesso enunciato «Alice cresce» che lo diventa: più grande di quanto fosse, più piccola di quanto sarà."
   },
   {
     title: "Il paradosso di invecchiare",
     quote: "«sto invecchiando»",
-    act: "il divenire",
+    act: "il puro divenire",
     opening:
       "non registro semplicemente il passare degli anni.",
     double:
       "Dico che la stessa vita appare, rispetto a chi ero, più piena, e rispetto a chi sarò, già troppo breve.",
     final:
-      "Il tempo non scorre in due direzioni, ma la frase mi tiene insieme come già troppo tardi e ancora in tempo."
+      "Non è nello stesso istante che una vita sia compiuta e mancante. Ma è nella stessa frase «sto invecchiando» che diventa insieme troppo lunga per ciò che contiene e troppo breve per ciò che promette ancora."
   },
   {
     title: "Il paradosso del procrastinare",
     quote: "«lo faccio domani»",
-    act: "il divenire",
+    act: "l'economia del tempo",
     opening:
       "non sposto soltanto un'attività sul calendario.",
     double:
       "Dico che lo stesso compito esce dall'agenda di oggi ed entra, nello stesso momento, in un angolo fisso dei miei pensieri.",
     final:
-      "Il domani non è ancora arrivato, ma la frase trasforma quel compito in qualcosa che continua a occupare proprio il presente che volevo sgombrare."
+      "Non è nello stesso oggi che il compito sia assente e presente. Ma è nello stesso «lo faccio domani» che diventa insieme rinviato nel tempo e installato come presenza ostinata nell'oggi che volevo liberare."
   },
   {
     title: "Il paradosso del rassicurare",
     quote: "«non ti preoccupare»",
-    act: "il divenire",
+    act: "l'economia dell'ansia",
     opening:
       "non cancello di colpo il motivo d'ansia.",
     double:
-      "Dico che la stessa preoccupazione sembra farsi più piccola a parole e, nello stesso istante, più grande nel non‑detto.",
+      "Dico che la stessa preoccupazione sembra farsi più piccola a parole e, nello stesso istante, più grande nel non-detto.",
     final:
-      "La frase vuole calmare, ma trattiene l'allarme sia come eco smorzata sia come sospetto che non osa nominare."
+      "Non è nello stesso punto dell'animo che l'ansia si plachi e si intensifichi. Ma è nella stessa formula «non ti preoccupare» che diventa insieme attenuata in superficie e rilanciata in profondità."
   },
   {
     title: "Il paradosso del mettere like",
     quote: "«metto un like»",
-    act: "il divenire",
+    act: "la politica dell'immagine",
     opening:
       "non compio solo un gesto leggero con il pollice.",
     double:
       "Dico che lo stesso clic rende il gesto più irrilevante, perché vale un istante, e più pesante, perché verrà contato, archiviato, interpretato.",
     final:
-      "Il dito sfiora lo schermo una volta sola, ma il segno resta insieme minimo nel mio vissuto e massimo nel calcolo degli altri."
+      "Non è nello stesso sguardo che quel segno sia insignificante e decisivo. Ma è nello stesso like che diventa insieme minimo nel mio gesto e massimo nel dispositivo che lo registra."
   },
   {
     title: "Il paradosso del delegare",
     quote: "«te lo delego»",
-    act: "il divenire",
+    act: "la politica della responsabilità",
     opening:
       "non mi limito a distribuire il lavoro.",
     double:
       "Dico che lo stesso problema diventa più piccolo per chi lo scarica e più grande per chi lo riceve.",
     final:
-      "L'incarico si sposta di scrivania, ma è la stessa frase che alleggerisce una responsabilità mentre ne appesantisce un'altra."
+      "Non è sulla stessa scrivania che un carico sia alleggerito e appesantito. Ma è nella stessa frase «te lo delego» che un unico compito diventa insieme sollievo per uno e aggravio per l'altro."
   },
   {
     title: "Il paradosso del promettere",
     quote: "«te lo prometto»",
-    act: "il divenire",
+    act: "la politica della responsabilità",
     opening:
       "non aggiungo solo una formula di cortesia.",
     double:
       "Dico che la stessa incertezza sembra ridursi, perché ha una parola a sostenerla, e crescere, perché ora porta il peso di un vincolo.",
     final:
-      "La promessa non sposta il futuro, ma lo tiene sospeso fra la fiducia e il timore di non mantenerla."
+      "Non è nello stesso futuro che una promessa sia più sicura e più minacciata. Ma è nello stesso «te lo prometto» che il futuro diventa insieme garantito e carico del rischio di essere mancato."
   },
   {
     title: "Il paradosso del chiudere la discussione",
     quote: "«chiudiamo qui la discussione»",
-    act: "il divenire",
+    act: "la politica della parola",
     opening:
       "non sto semplicemente mettendo fine a una conversazione.",
     double:
       "Dico che lo stesso tema viene archiviato come risolto e aperto come non più discutibile.",
     final:
-      "Il silenzio che segue è insieme pace e censura: la questione tace, ma non ha finito di parlare."
+      "Non è nello stesso scambio che una questione sia conclusa e proibita. Ma è nello stesso «chiudiamo qui» che diventa insieme risposta definitiva e porta sbarrata a ogni replica."
   },
   {
     title: "Il paradosso dell'aggiornare il profilo",
     quote: "«aggiorno il profilo»",
-    act: "il divenire",
+    act: "la politica dell'identità",
     opening:
       "non cambio semplicemente una foto e due righe di testo.",
     double:
       "Dico che la stessa identità si fa più riconoscibile per chi guarda e più costruita per chi la espone.",
     final:
-      "L'io resta un corpo, ma lì vive come immagine che insieme chiarisce e tradisce chi la porta."
+      "Non è nello stesso sguardo che un volto sia più autentico e più artificiale. Ma è nello stesso aggiornamento che l'io diventa insieme più chiaro come immagine e più distante da chi lo porta."
   },
   {
     title: "Il paradosso del dire «ci vediamo»",
     quote: "«ci vediamo presto»",
-    act: "il divenire",
+    act: "l'economia del tempo",
     opening:
       "non fisso davvero una data.",
     double:
       "Dico che lo stesso incontro si fa più vicino nell'immaginazione e più lontano nella pratica.",
     final:
-      "La formula congeda e trattiene: saluta l'altro e lo tiene sospeso in un futuro che potrebbe non arrivare."
+      "Non è nello stesso calendario che un appuntamento sia deciso e indefinito. Ma è nello stesso «ci vediamo presto» che diventa insieme promessa di prossimità e licenza di rimandare all'infinito."
   },
 
   // --- Paradossi statici / logici / matematici ---
   {
     title: "Il paradosso dello zero",
     quote: "«0 non è né positivo né negativo»",
-    act: "il tracciare il limite",
+    act: "la logica del limite",
     opening:
       "non racconto la storia di un numero che attraversa lo zero.",
     double:
       "Dico che lo stesso segno vale come più grande di ogni numero negativo e più piccolo di ogni numero positivo.",
     final:
-      "La cifra resta immobile, mentre la retta dei numeri si tende in due sensi opposti attorno a lei."
+      "Non è nello stesso confronto che uno zero sia massimo tra i negativi e minimo tra i positivi. Ma è nello stesso zero che diventa insieme frontiera estrema di una serie e frontiera estrema dell'altra."
   },
   {
     title: "Il paradosso della somma banale",
     quote: "«2+2=4»",
-    act: "il fare logica",
+    act: "il lavoro della logica",
     opening:
       "non descrivo un calcolo che evolve.",
     double:
       "Dico che la stessa uguaglianza appare come il risultato più ovvio e come il vincolo più rigido, che non ammette eccezioni.",
     final:
-      "Il quattro non cresce né diminuisce, ma tiene il pensiero fra l'evidenza che rassicura e la necessità che non si può discutere."
+      "Non è nello stesso atto mentale che un'equazione sia tranquillizzante e oppressiva. Ma è nello stesso «2+2=4» che diventa insieme evidenza che consola e necessità che non lascia scampo."
   },
   {
     title: "Il paradosso dell'identità",
     quote: "«A è A»",
-    act: "il fare logica",
+    act: "il lavoro della logica",
     opening:
       "non aggiungo nulla al simbolo che nomino.",
     double:
       "Dico che la stessa formula vale come massima ovvietà e massimo enigma: chiude ogni domanda e ne fa nascere di nuove.",
     final:
-      "L'identico non si muove, ma la mente vi gira intorno fra la tautologia e la vertigine."
+      "Non è nello stesso enunciato che l'identico sia il più semplice e il più oscuro. Ma è nello stesso «A è A» che diventa insieme tautologia scolastica e abisso speculativo."
   },
   {
     title: "Il paradosso della tautologia",
     quote: "«se piove, allora piove»",
-    act: "il fare logica",
+    act: "il lavoro della logica",
     opening:
       "non informo nessuno sul meteo.",
     double:
       "Dico che la stessa frase realizza il massimo della certezza e il minimo dell'informazione.",
     final:
-      "Il cielo resta uguale, ma la logica vi trova insieme il suo punto più solido e più inutile."
+      "Non è nello stesso discorso che un enunciato sia completamente sicuro e completamente vuoto. Ma è nella stessa tautologia che diventa insieme fondamento della logica e caricatura del dire."
   },
   {
     title: "Il paradosso della contraddizione formale",
-    quote: "«è impossibile che P e non‑P siano vere insieme»",
-    act: "il fare logica",
+    quote: "«è impossibile che P e non-P siano vere insieme»",
+    act: "il lavoro della logica",
     opening:
       "non descrivo due fatti incompatibili.",
     double:
       "Dico che la stessa regola respinge la contraddizione e la mantiene davanti agli occhi come esempio costante.",
     final:
-      "La forma resta negativa, ma vive del caso che proibisce e di cui non smette di parlare."
+      "Non è nella stessa situazione che P e non-P siano ammesse e vietate. Ma è nella stessa legge che le proibisce che la contraddizione diventa insieme caso limite espulso e figura centrale del pensiero."
   },
   {
     title: "Il paradosso del confine della città",
     quote: "«qui finisce la città»",
-    act: "il tracciare il limite",
+    act: "la logica del limite",
     opening:
       "non indico un muro che avanza o arretra.",
     double:
       "Dico che la stessa linea è ultimo limite per chi sta dentro e primo limite per chi sta fuori.",
     final:
-      "Non c'è un prima e un dopo del confine: è il punto in cui interno ed esterno si scambiano di posto senza muoversi."
+      "Non è nello stesso passo che qualcuno entri e qualcuno esca. Ma è nello stesso confine che dentro e fuori diventano insieme ciò che si lascia e ciò in cui si arriva."
   },
   {
     title: "Il paradosso della porta socchiusa",
     quote: "«la porta è socchiusa»",
-    act: "il tracciare il limite",
+    act: "la logica del limite",
     opening:
       "non racconto un movimento di apertura o chiusura.",
     double:
       "Dico che la stessa fessura è ancora abbastanza chiusa da non lasciar passare nessuno e già abbastanza aperta da lasciar passare lo sguardo.",
     final:
-      "La posizione resta ferma, ma tiene insieme il sì e il no in un unico varco incerto."
+      "Non è nella stessa posizione che una porta sia chiusa e aperta. Ma è nello stesso spiraglio che diventa insieme barriera per i corpi e invito per gli occhi."
   },
   {
     title: "Il paradosso di zero gradi",
     quote: "«a zero gradi l'acqua congela»",
-    act: "il tracciare il limite",
+    act: "la logica del limite",
     opening:
       "non seguo il destino di una goccia che cambia stato.",
     double:
       "Dico che la stessa temperatura è ancora liquida per chi sta un soffio sopra e già solida per chi sta un soffio sotto.",
     final:
-      "La cifra è fissa, ma due stati incompatibili vengono a toccarsi esattamente lì."
+      "Non è nello stesso campione che l'acqua sia ghiaccio e acqua. Ma è nello stesso zero che la materia diventa insieme ultimo grado del liquido e primo del solido."
   },
   {
     title: "Il paradosso della soglia di sufficienza",
     quote: "«18 è la sufficienza»",
-    act: "il tracciare il limite",
+    act: "la logica del limite",
     opening:
       "non narro la storia di un voto che sale.",
     double:
       "Dico che lo stesso numero è ancora insufficiente per chi resta sotto e già sufficiente per chi lo raggiunge.",
     final:
-      "La scala resta la stessa, ma quel gradino separa di colpo il non‑ammesso dall'ammesso."
+      "Non è nello stesso compito che uno studente sia respinto e ammesso. Ma è nello stesso 18 che la valutazione diventa insieme ultimo grado dell'insufficiente e primo del riuscito."
   },
   {
     title: "Il paradosso dell'equatore",
     quote: "«l'equatore divide i due emisferi»",
-    act: "il tracciare il limite",
+    act: "la logica del limite",
     opening:
       "non immagino una linea che migra verso nord o verso sud.",
     double:
       "Dico che lo stesso cerchio è massimo sud del nord e massimo nord del sud.",
     final:
-      "La Terra gira, ma l'equatore la costringe a essere sempre sopra e sotto se stessa nello stesso tempo."
+      "Non è nello stesso punto della Terra che si abiti l'emisfero nord e l'emisfero sud. Ma è nello stesso equatore che il pianeta diventa insieme bordo estremo del nord e bordo estremo del sud."
   },
   {
     title: "Il paradosso del centro del cerchio",
     quote: "«questo è il centro del cerchio»",
-    act: "il tracciare il limite",
+    act: "la logica del limite",
     opening:
       "non penso a un punto che si sposta verso il bordo.",
     double:
       "Dico che lo stesso punto è il più lontano da ogni punto della circonferenza e, per questo, equamente vicino a tutti.",
     final:
-      "Non si muove, ma distribuisce tutte le distanze come se partissero da lui."
+      "Non è nella stessa distanza che un luogo sia massimo e minimo. Ma è nello stesso centro che ogni raggio diventa insieme distanza uguale e distanza irriducibile da tutti i bordi."
   },
   {
     title: "Il paradosso della pagina bianca",
     quote: "«la pagina è ancora bianca»",
-    act: "il dare figura al fenomeno",
+    act: "il darsi del fenomeno",
     opening:
       "non constato solo che non c'è inchiostro.",
     double:
       "Dico che lo stesso spazio è il più vuoto e il più pieno: non contiene nulla e può contenere tutto.",
     final:
-      "Il foglio resta immobile, ma su di lui si affollano in anticipo tutti i testi possibili."
+      "Non è nello stesso testo che una pagina sia priva di segni e carica di possibilità. Ma è nella stessa pagina bianca che diventa insieme mancanza assoluta e eccedenza di senso in attesa."
   },
   {
     title: "Il paradosso del silenzio",
     quote: "«qui c'è silenzio»",
-    act: "il dare figura al fenomeno",
+    act: "il darsi del fenomeno",
     opening:
       "non registro soltanto l'assenza di suono.",
     double:
       "Dico che lo stesso silenzio è massima pace per chi lo cerca e massima tensione per chi lo subisce.",
     final:
-      "L'aria resta ferma, ma raddoppia sia la quiete sia l'angoscia."
+      "Non è nello stesso ascolto che il silenzio sia riposo e minaccia. Ma è nello stesso tacere che diventa insieme spazio di quiete e luogo in cui ogni rumore possibile fa paura."
   },
+
   // --- Paradossi pragmatici / normativi ---
   {
     title: "Il paradosso del «è solo un gioco»",
     quote: "«è solo un gioco»",
-    act: "il normare",
+    act: "il lavoro della norma",
     opening:
       "non sto semplicemente sminuendo quello che accade.",
     double:
       "Dico che la stessa attività viene dichiarata meno seria di tutto il resto e, nello stesso istante, usata per allenare le stesse regole di vittoria e sconfitta.",
     final:
-      "Il gioco è detto «solo» gioco, ma diventa il luogo in cui si impara come si vince e come si perde anche fuori dal campo."
+      "Non è nello stesso campo che qualcosa sia finto e formi davvero. Ma è nello stesso «solo un gioco» che un gesto diventa insieme irrilevante a parole e decisivo nel modo in cui impariamo a vincere e a perdere."
   },
   {
     title: "Il paradosso dell'«è solo un'opinione personale»",
     quote: "«è solo un'opinione personale»",
-    act: "il normare",
+    act: "il lavoro della norma",
     opening:
       "non sto soltanto facendo un passo indietro rispetto alla verità.",
     double:
       "Dico che lo stesso giudizio si presenta come più debole, perché non pretende oggettività, e più forte, perché non accetta di essere discusso al di fuori di chi lo pronuncia.",
     final:
-      "La formula attenua il tono, ma blinda il contenuto: sembra ritirarsi e intanto si rende intoccabile."
+      "Non è nello stesso dibattito che un'idea sia dimessa e intoccabile. Ma è nello stesso «è solo personale» che diventa insieme auto-limitata e sottratta al confronto."
   },
   {
     title: "Il paradosso del «non prenderla sul personale»",
     quote: "«non prenderla sul personale»",
-    act: "il normare",
+    act: "il lavoro della norma",
     opening:
       "non sto davvero togliendo la tua persona dal centro della frase.",
     double:
       "Dico che lo stesso rimprovero si propone come generale, valido per chiunque, e nello stesso momento colpisce proprio te, qui e ora, come il vero bersaglio.",
     final:
-      "La formula pretende di depersonalizzare, ma serve soprattutto a far passare qualcosa che è già arrivato troppo vicino."
+      "Non è nello stesso colpo che una parola sia neutra e mirata. Ma è nello stesso «non prenderla sul personale» che diventa insieme universalizzata nel discorso e cucita addosso a chi la riceve."
   },
   {
     title: "Il paradosso del «te lo dico per il tuo bene»",
     quote: "«te lo dico per il tuo bene»",
-    act: "il normare",
+    act: "il lavoro della norma",
     opening:
       "non sto solo chiarendo le mie intenzioni.",
     double:
       "Dico che la stessa frase si offre come cura per te e come garanzia per me, che posso così spingere di più senza sembrare aggressivo.",
     final:
-      "Il bene dell'altro viene convocato come motivo, ma è anche lo schermo dietro cui si nasconde il mio desiderio di orientare le sue scelte."
+      "Non è nello stesso consiglio che il bene dell'altro sia criterio e scudo. Ma è nello stesso «per il tuo bene» che diventa insieme misura di ciò che dovresti volere e copertura di ciò che voglio io."
   },
   {
     title: "Il paradosso dell'«è solo teoria»",
     quote: "«è solo teoria»",
-    act: "il normare",
+    act: "il lavoro della norma",
     opening:
       "non sto separando semplicemente il pensiero dalla pratica.",
     double:
       "Dico che lo stesso insieme di idee viene messo da parte come irrilevante e usato in silenzio come griglia per giudicare ciò che funziona.",
     final:
-      "La teoria è dichiarata «solo» teoria, ma resta il metro invisibile con cui si misurano i fatti."
+      "Non è nello stesso gesto che la teoria sia accantonata e decisiva. Ma è nello stesso «è solo teoria» che diventa insieme ciò che si finge di non seguire e ciò che in realtà orienta ciò che si fa."
   }
 ];
 
